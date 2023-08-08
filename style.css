@@ -2,11 +2,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.sf-title {
-    font-family: 'Comfortaa', cursive;
-    display: inline-block;
-}
-
 header {
     background: #333 url('images/happy-senior.jpg') no-repeat top center;
     background-size: cover;
@@ -14,7 +9,7 @@ header {
 }
 
 nav {
-    height: 20px;
+    height: 2.5%;
     width: auto;
 
     text-align: left;
@@ -23,12 +18,44 @@ nav {
 }
 
 .sf-logo {
-    width: 30px;
+    width: 150px;
     height: auto;
     display: inline-block;
+    font-family: 'Comfortaa', cursive;
 }
 
 #menu {
+    margin: 0 0 0 60px;
+    padding: 0;
     display: inline-block;
+    vertical-align: middle;
     list-style-type: none;
+    height: 100%;
+}
+
+#menu > li {
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+}
+
+#menu > li > a {
+    text-decoration: none;
+    color: #1B922E;
+}
+
+#menu > li > .about-feedback {
+    text-decoration: underline;
+}
+
+#menu > li > .store-feedback {
+    text-decoration: underline;
+}
+
+#menu > li > .support-feedback {
+    text-decoration: underline;
+}
+
+#hero-section {
+
 }
