@@ -14,7 +14,7 @@
             <a href="index.html"><img src="images/small-logo.png" alt="SimplyFit Logo" class="sf-logo"></a>
             <h1 class="sf-title">SimplyFit</h1>
             <ul id="menu">
-                <li><a href="membership.html">ABOUT US</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="store.html">STORE</a></li>
                 <li><a href="support.html">SUPPORT</a></li>
             </ul>
@@ -22,17 +22,61 @@
     </header>
 
     <main>
-        
+        <h1>Customer Support Ticket</h1>
+        <form class="container" id="form">
+
+            <label for="staff">Your Full Name</label><br>
+            <input type="text" id="customer-name" placeholder="Your Name">
+
+            <label for="customer">Your Email</label><br>
+            <input type="email" id="customer-email" placeholder="your@email.com">
+
+            <label for="staff">Choose a Request Type</label><br>
+            <select name="Subject">
+                <option value="tech-issues">General Questions</option>
+                <option value="saab">Tech Issues</option>
+                <option value="mercedes">Billing, Payment, and Refunds</option>
+                <option value="audi">Other</option>
+              </select>
+            
+
+            <label for="date">Date</label><br>
+            <input type="date" id="date">
+
+            <label for="staff">Subject</label><br>
+            <input type="text" id="subject">
+
+            Description:<br>
+                <textarea cols="30" rows="3"></textarea>
+
+            <input type="submit" class="button">
+        </form>
+
+        <!--<div class="container" id="invitation-card">
+            <p id="greeting">
+
+            </p>
+            <p id="message-body">
+
+            </p>
+            <p id="signature">
+
+            </p>
+        </div>-->
     </main>
 
     <footer>
         <img src="images/small-logo.png" alt="SimplyFit Logo" class="sf-logo">
         <ul id="menu">
-            <li> <a href="membership.html">ABOUT US</a> </li>
+            <li> <a href="about.html">ABOUT US</a> </li>
             <li> <a href="store.html">STORE</a> </li>
             <li> <a href="support.html">SUPPORT</a> </li>
         </ul>
         <p>&copy;SimplyFit, Inc. 2023. We love our users!</p>
     </footer>
+
+    <script>
+        
+    </script>
 </body>
 </html>
