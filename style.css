@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    height: 20px;
+    height: 2.5%;
     width: auto;
 
     text-align: left;
@@ -23,12 +23,27 @@ nav {
 }
 
 .sf-logo {
-    width: 30px;
+    width: 150px;
     height: auto;
     display: inline-block;
 }
 
 #menu {
-    display: inline-block;
     list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    display: inline-flex;
+    vertical-align: middle;
+    list-style-type: none;
+    height: 100%;
+}
+
+#menu > li {
+    margin: 0 10px;
+    padding-bottom: 0;
+    display: inline-block;
+}
+
+#menu > li > a {
+    text-decoration: none;
 }
