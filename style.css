@@ -1,11 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-header {
-    background: #333 url('images/happy-senior.jpg') no-repeat top center;
-    background-size: cover;
-    height: 1400px;
+    margin: 0;
 }
 
 nav {
@@ -55,4 +50,23 @@ nav {
 #menu > li > .support-feedback {
     text-decoration: underline;
 }
+#hero-section {
+    background: #333 url('images/happy-senior.jpg') no-repeat top center;
+    background-size: cover;
+    height: 1400px;
+}
 
+
+#biceps-curl > ol{
+    text-align: left;
+    width: 35%;
+    font-size: 1.2em;
+}
+
+#biceps-curl > ol, iframe {
+    display: inline-block;
+}
+
+#biceps-curl > iframe {
+    margin-left: 12.5%;
+}
