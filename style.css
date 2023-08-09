@@ -70,3 +70,17 @@ nav {
     display: inline-block;
     background-color: #1B922E;
 }
+
+#biceps-curl > ol {
+    text-align: left;
+    width: 35%;
+    font-size: 1.2em;
+}
+
+#biceps-curl > ol, iframe {
+    display: inline-block;
+}
+
+#biceps-curl > iframe {
+    margin-left: 12.5%;
+}
