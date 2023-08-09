@@ -1,16 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-.sf-title {
-    font-family: 'Comfortaa', cursive;
-    display: inline-block;
-}
-
-header {
-    background: #333 url('images/happy-senior.jpg') no-repeat top center;
-    background-size: cover;
-    height: 1400px;
+    margin: 0;
 }
 
 nav {
@@ -26,13 +16,13 @@ nav {
     width: 150px;
     height: auto;
     display: inline-block;
+    font-family: 'Comfortaa', cursive;
 }
 
 #menu {
-    list-style-type: none;
-    padding: 5px;
-    margin: 0;
-    display: inline-flex;
+    margin: 0 0 0 60px;
+    padding: 0;
+    display: inline-block;
     vertical-align: middle;
     list-style-type: none;
     height: 100%;
@@ -40,10 +30,43 @@ nav {
 
 #menu > li {
     margin: 0 10px;
-    padding-bottom: 0;
+    padding: 0;
     display: inline-block;
 }
 
 #menu > li > a {
     text-decoration: none;
+    color: #1B922E;
+}
+
+#menu > li > .about-feedback {
+    text-decoration: underline;
+}
+
+#menu > li > .store-feedback {
+    text-decoration: underline;
+}
+
+#menu > li > .support-feedback {
+    text-decoration: underline;
+}
+#hero-section {
+    background: #333 url('images/happy-senior.jpg') no-repeat top center;
+    background-size: cover;
+    height: 1400px;
+}
+
+
+#biceps-curl > ol{
+    text-align: left;
+    width: 35%;
+    font-size: 1.2em;
+}
+
+#biceps-curl > ol, iframe {
+    display: inline-block;
+}
+
+#biceps-curl > iframe {
+    margin-left: 12.5%;
 }
