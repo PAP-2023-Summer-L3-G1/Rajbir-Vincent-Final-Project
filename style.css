@@ -4,90 +4,52 @@ body {
     line-height: 1.5em;
 }
 
-nav {
-    height: 2.5%; /*use pixels*/
+nav, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
     background-color: white;
-    position: relative;
-    
+
 }
+
 
 .sf-logo {
     width: 150px;
     display: inline-block;
     font-family: 'Comfortaa', cursive;
-    margin-left: 3%;
+    margin-left: 35px;
     vertical-align: bottom;
 }
 
-#nav-menu {
+.menu {
     margin: 0 0 0 60px;
     padding: 0;
-    display: inline-block;
-    vertical-align: 20%;
     list-style-type: none;
-    position: relative;
-    left: 60%;
 }
-#nav-menu > li {
+.menu > li {
     margin: 0 10px;
     padding: 0;
     display: inline-block;
 }
-#nav-menu > li > a {
+.menu > li > a {
+    padding: 5px 10px;
     text-decoration: none;
     color: #1680E3;
 }
-#nav-menu > li > .about-feedback {
-    text-decoration: underline;
-}
-#nav-menu > li > .store-feedback {
-    text-decoration: underline;
-}
-#nav-menu > li > .support-feedback {
+.menu > li > .about-feedback, .store-feedback, .support-feedback {
     text-decoration: underline;
 }
 
-/* FOOTER v */
-footer {
-    height: 2.5%;
-    width: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-    background-color: white;
-    position: relative;
+footer > p {
+    margin-right: 35px;
 }
-#footer-menu {
-    margin: 0 0 0 60px;
-    padding: 0;
-    display: inline-block;
-    vertical-align: 20%;
-    list-style-type: none;
-    position: relative;
-    left: 60%;
+
+#support {
+    margin-right: 15px;
 }
-#footer-menu > li {
-    margin: 0 10px;
-    padding: 0;
-    display: inline-block;
-}
-#footer-menu > li > a {
-    text-decoration: none;
-    color: #1680E3;
-}
-#footer-menu > li > .about-feedback {
-    text-decoration: underline;
-}
-#footer-menu > li > .store-feedback {
-    text-decoration: underline;
-}
-#footer-menu > li > .support-feedback {
-    text-decoration: underline;
-}
-/* FOOTER ^ */
 
 /* INDEX html v */
 #hero-section {
@@ -107,7 +69,7 @@ footer {
 
 #merch-section {
     background-color: #4E3E22;
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: inline-block;
     color: white;
