@@ -10,9 +10,8 @@ nav, footer {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: left;
+    text-align: center;
     background-color: white;
-
 }
 
 
@@ -51,38 +50,40 @@ footer > p {
     margin-right: 15px;
 }
 
-/* INDEX html v */
-#hero-section {
+/* INDEX html begins here */
+#hero {
     background: #333 url('images/happy-senior.jpg') no-repeat center center;
     background-size: cover;
     height: 900px;
-    width: 100%;
-    display: inline-block;
+    position: relative
 }
 #hero-text {
-    padding-left: 53%;
+    /*padding-left: 53%;
     padding-top: 6%;
-    padding-right: 10%;
+    padding-right: 10%;*/
     font-size: 1.7em;
+    width: 40%;
+    position: absolute;
+    left: 720px;
+    top: 120px;
 }
 
 
-#merch-section {
+#merch {
     background-color: #4E3E22;
-    height: 500px;
-    width: 100%;
-    display: inline-block;
+    height: 430px;
     color: white;
     font-size: 1.2em;
+    /*box-sizing: border-box;*/
 }
-#merch-section > #merch-htag, #merch-ptag, #green-button {
+#merch > #merch-htag, #merch-ptag, #green-button {
     width: 30%;
-    margin-left: 15%;
+    left: 10%;
     top: 22%;
     vertical-align: bottom;
     position: relative;
 }
-#merch-section > #merch-htag {
+#merch > #merch-htag {
     font-weight: 900;
 }
 
@@ -112,15 +113,17 @@ footer > p {
 
 
 
-#programs-div {
+#workout-programs {
     background-color: #E3C8AC;
-    margin-top: -70px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: space-evenly;
 }
 #workout-programs-heading {
     display: block;
     margin-left: 10%;
     font-size: 2.3em;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 .programs {
     margin-top: 40px;
@@ -149,9 +152,10 @@ footer > p {
 }
 
 
-#more-info-div {
+#more-information {
     background-color: #496D43;
     margin-top: -140px;
+    color: white;
 }
 #more-information-heading {
     display: block;
