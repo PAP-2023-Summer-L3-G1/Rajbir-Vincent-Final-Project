@@ -5,13 +5,13 @@ body {
 }
 
 nav {
-    height: 2.5%;
-    width: auto;
+    height: 2.5%; /*use pixels*/
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
     background-color: white;
     position: relative;
+    
 }
 
 .sf-logo {
@@ -149,15 +149,16 @@ footer {
 }
 
 
+
 #programs-div {
     background-color: #E3C8AC;
+    margin-top: -70px;
 }
 #workout-programs-heading {
     display: block;
     margin-left: 10%;
     font-size: 2.3em;
     padding-top: 80px;
-    margin-top: -90px;
 }
 .programs {
     margin-top: 40px;
@@ -273,3 +274,9 @@ section {
   
 /*Upper Body, Center Body/ Lower Body ends here*/
 
+/* About Us starts here */
+#about-hero {
+    background-image: url("images/about-background.jpg") no-repeat center center;
+    height: 900px;
+    width: 100%;
+}
