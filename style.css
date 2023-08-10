@@ -7,7 +7,8 @@ body {
 nav {
     height: 2.5%;
     width: auto;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: left;
     background-color: white;
     position: relative;
@@ -17,42 +18,78 @@ nav {
     width: 150px;
     display: inline-block;
     font-family: 'Comfortaa', cursive;
-    margin-left: 30px;
+    margin-left: 3%;
     vertical-align: bottom;
 }
 
-#menu {
+#nav-menu {
     margin: 0 0 0 60px;
     padding: 0;
     display: inline-block;
     vertical-align: 20%;
     list-style-type: none;
-
+    position: relative;
+    left: 60%;
 }
-
-#menu > li {
+#nav-menu > li {
     margin: 0 10px;
     padding: 0;
     display: inline-block;
 }
-
-#menu > li > a {
+#nav-menu > li > a {
     text-decoration: none;
-    color: #1B922E;
+    color: #1680E3;
 }
-
-#menu > li > .about-feedback {
+#nav-menu > li > .about-feedback {
+    text-decoration: underline;
+}
+#nav-menu > li > .store-feedback {
+    text-decoration: underline;
+}
+#nav-menu > li > .support-feedback {
     text-decoration: underline;
 }
 
-#menu > li > .store-feedback {
+/* FOOTER v */
+footer {
+    height: 2.5%;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    position: relative;
+}
+#footer-menu {
+    margin: 0 0 0 60px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: 20%;
+    list-style-type: none;
+    position: relative;
+    left: 60%;
+}
+#footer-menu > li {
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+}
+#footer-menu > li > a {
+    text-decoration: none;
+    color: #1680E3;
+}
+#footer-menu > li > .about-feedback {
     text-decoration: underline;
 }
-
-#menu > li > .support-feedback {
+#footer-menu > li > .store-feedback {
     text-decoration: underline;
 }
+#footer-menu > li > .support-feedback {
+    text-decoration: underline;
+}
+/* FOOTER ^ */
 
+/* INDEX html v */
 #hero-section {
     background: #333 url('images/happy-senior.jpg') no-repeat center center;
     background-size: cover;
@@ -60,17 +97,115 @@ nav {
     width: 100%;
     display: inline-block;
 }
-
 #hero-text {
-    padding-left: 50%;
-    padding-top: 10%;
+    padding-left: 53%;
+    padding-top: 6%;
     padding-right: 10%;
+    font-size: 1.7em;
 }
+
 
 #merch-section {
+    background-color: #4E3E22;
+    height: 400px;
+    width: 100%;
     display: inline-block;
-    background-color: #1B922E;
+    color: white;
+    font-size: 1.2em;
 }
+#merch-section > #merch-htag, #merch-ptag, #green-button {
+    width: 30%;
+    margin-left: 15%;
+    top: 22%;
+    vertical-align: bottom;
+    position: relative;
+}
+#merch-section > #merch-htag {
+    font-weight: 900;
+}
+
+#green-button {
+    width: 170px;
+    height: 50px;
+    background-color: #1680E3;
+    border: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+#green-button > #shop-here-button {
+    position: relative;
+    top: 25%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#merch-image {
+    height: 300px;
+    width: auto;
+    position: relative;
+    bottom: 35%;
+    left: 50%;
+}
+
+
+#programs-div {
+    background-color: #E3C8AC;
+}
+#workout-programs-heading {
+    display: block;
+    margin-left: 10%;
+    font-size: 2.3em;
+    padding-top: 80px;
+    margin-top: -90px;
+}
+.programs {
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 19%;
+    height: 600px;
+    display: inline-block;
+    font-size: 19.2px;
+}
+.programs-centerbody {
+    margin-top: 40px;
+    width: 21%;
+    height: 600px;
+    display: inline-block;
+    font-size: 19.2px;
+}
+.body-titles {
+    font-weight: 900;
+    font-size: 1.3em;
+    margin-bottom: -10px;
+}
+.program-atags {
+    color: #1680E3;
+    font-weight: bolder;
+}
+
+
+#more-info-div {
+    background-color: #496D43;
+    margin-top: -140px;
+}
+#more-information-heading {
+    display: block;
+    padding-left: 10%;
+    font-size: 2.3em;
+    padding-top: 5%;
+}
+.more-info {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 20%;
+    display: inline-block;
+}
+
+/* INDEX html ^ */
+
+
 
 /*Upper Body, Center Body/ Lower Body*/
 
@@ -120,4 +255,21 @@ section {
     font-size: 2.25em;
 }
 
+.video > ol {
+    text-align: left;
+    width: 36%;
+    display: inline-block;
+}
+
+.video > iframe {
+    display: inline-block;
+}
+
+.video-titles {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25em;
+}
+  
 /*Upper Body, Center Body/ Lower Body ends here*/
+
