@@ -222,7 +222,7 @@ section {
     font-size: 2.25em;
 }
 
-.video > ol {
+.video > ol, ul {
     text-align: left;
     width: 36%;
     display: inline-block;
