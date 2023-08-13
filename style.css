@@ -150,10 +150,10 @@ h4 {
 }
 
 
-
 #more-information {
     background-color: #496D43;
     color: white;
+    height: 700px;
 }
 #more-information-heading {
     display: block;
@@ -177,6 +177,51 @@ h4 {
 
 
 /*Upper Body, Center Body/ Lower Body*/
+
+.intro {
+    background: no-repeat center center;
+    background-size: cover;
+    height: 700px;
+}
+
+
+.intro-text {
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+}
+
+.intro-text > h3 {
+    font-size: 2.5em;
+}
+
+.intro-text > p {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#upb-intro {
+    background-image: url("images/upper-body-hero.jpg");
+}
+
+#upb-intro-text {
+    top: 525px;
+}
+
+#cb-intro {
+    background-image: url("images/center-body-hero.jpg");
+}
+
+#lb-intro {
+    background-image: url("images/lower-body-hero.jpg");
+}
+
+#lb-intro-text {
+    text-align: left;
+    width: 35%;
+    top: 200px;
+    color: white;
+}
 
 .brown {
     background-color: #4E3E22;
@@ -222,9 +267,10 @@ section {
     text-align: center;
     font-weight: bold;
     font-size: 2.25em;
+    padding-bottom: 20px;
 }
 
-.video > ol, ul {
+.video > ol {
     text-align: left;
     width: 36%;
     display: inline-block;
