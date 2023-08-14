@@ -33,6 +33,14 @@ nav, footer {
     padding: 0;
     display: inline-block;
 }
+
+.menu > li> .current {
+    color: #E37916;
+}
+
+.menu > li> a:hover {
+    color: #E37916;
+}
 .menu > li > a {
     padding: 5px 10px;
     text-decoration: none;
@@ -53,7 +61,7 @@ footer > p {
 
 /* INDEX html begins here */
 #hero {
-    background: #333 url('images/happy-senior.jpg') no-repeat center center;
+    background: #333 url('images/index-hero.jpg') no-repeat center center;
     background-size: cover;
     height: 900px;
     position: relative
@@ -71,13 +79,13 @@ footer > p {
 
 
 #merch {
-    background-color: #4E3E22;
+    background-color:#A68059;
     height: 400px;
     color: white;
     font-size: 1.2em;
     /*box-sizing: border-box;*/
 }
-#merch > #merch-htag, #merch-ptag, #green-button {
+#merch > #merch-htag, #merch-ptag, #blue-button {
     width: 30%;
     left: 10%;
     top: 22%;
@@ -88,15 +96,15 @@ footer > p {
     font-weight: 900;
 }
 
-#green-button {
+#blue-button {
     width: 170px;
     height: 50px;
     background-color: #1680E3;
     border: 300px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
 }
-#green-button > #shop-here-button {
+#blue-button > #shop-here-button {
     position: relative;
     top: 25%;
     color: white;
@@ -112,8 +120,6 @@ footer > p {
     left: 50%;
 }
 
-
-
 #workout-programs-heading {
     display: block;
     margin-left: 10%;
@@ -121,7 +127,7 @@ footer > p {
     padding-top: 40px;
 }
 #workout-programs {
-    background-color: #E3C8AC;
+    background-color: #DDD;
 }
 .programs {
     margin-top: 40px;
@@ -151,7 +157,7 @@ h4 {
 
 
 #more-information {
-    background-color: #496D43;
+    background-color: #597FA6;
     color: white;
     height: 700px;
 }
@@ -169,14 +175,14 @@ h4 {
     font-size: 19.2px;
 }
 .info-atags {
-    color: #4cbae1;
+    color: #f7bd84;
     font-weight: bolder;
 }
 /* INDEX html ^ */
 
 
 
-/*Upper Body, Center Body/ Lower Body*/
+/*Exercises*/
 
 .intro {
     background: no-repeat center center;
@@ -200,12 +206,35 @@ h4 {
     line-height: 1.5em;
 }
 
-#upb-intro {
-    background-image: url("images/upper-body-hero.jpg");
+#upb-intro-text {
+    text-align: center;
+    margin-left: 42.5%;
+    max-width: 600px;
+    top: 200px;
+    color: white;
 }
 
-#upb-intro-text {
-    top: 525px;
+
+#upb-intro-text > h3 {
+    text-align: center
+}
+
+#lb-intro-text {
+    text-align: left;
+    margin-left: 5%;
+    width: 35%;
+    top: 200px;
+    color: white;
+}
+
+#handicapped-intro-text {
+    text-align: left;
+    width: 50%;
+    top: 250px;
+}
+
+#upb-intro {
+    background-image: url("images/upper-body-hero.jpg");
 }
 
 #cb-intro {
@@ -216,24 +245,21 @@ h4 {
     background-image: url("images/lower-body-hero.jpg");
 }
 
-#lb-intro-text {
-    text-align: left;
-    width: 35%;
-    top: 200px;
-    color: white;
+#handicapped-intro {
+    background-image: url("images/handicapped-exercises-hero.jpg");
 }
 
 .brown {
-    background-color: #4E3E22;
+    background-color: #A68059;
     color: white;
 }
 
-.tan {
-    background-color: #DDBC9A;
+.gray {
+    background-color: #DDD;
 }
 
-.green {
-    background-color: #496D43;
+.blue {
+    background-color: #597FA6;
     color: white;
 }
 
@@ -286,7 +312,7 @@ section {
     font-size: 2.25em;
 }
   
-/*Upper Body, Center Body/ Lower Body ends here*/
+/*Exercises*/
 
 /* About Us starts here */
 #about-hero {
@@ -327,6 +353,69 @@ section {
     /*background-color: #496D43;*/
 }
 /* About Us ends here */
+
+/*Support Starts Here*/
+
+#customer-support {
+    background-image: url('images/customer-support.jpg');
+    background-size: cover;
+}
+
+form {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 15px #3da1ff;
+}
+
+#support-heading {
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#submit-ticket {
+    font-size: 1.5em;
+    word-wrap: break-word;
+    font-weight: bolder;
+    text-align: center;
+}
+
+label, input {
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+
+label, select, textarea {
+    margin-left: 75px;
+}
+
+input, select {
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 500px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.button {
+    color: white;
+    background-color: #3da1ff;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 7.5%;
+    text-transform: uppercase;
+}
+
+select {
+    width: 200px;
+}
 
 /* store.html starts here */
 #merch-section {
