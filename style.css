@@ -328,3 +328,46 @@ section {
 }
 /* About Us ends here */
 
+/* store.html starts here */
+#merch-section {
+    height: 2000px;
+    width: 100%;
+    row-gap: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#store-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.merch-items { /*gap is too big*/
+    height: 400px;
+    display: inline-block;
+    width: 300px;
+    margin: 0px 30px 0px 30px;
+}
+
+.merch-image-box {
+    background-color: rgba(16, 110, 197, 0.161);
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+/*.merch-images {
+    align-items: center;
+}*/
+
+.outofstock-text {
+    color: black;
+    font-weight: bolder;
+}
+/* store.html ends here */
