@@ -122,11 +122,16 @@
         <p>&copy;SimplyFit, Inc. 2023. We love our users!</p>
     </footer>
 
-    <script> /*add javascript for outofstock alert*/
+    <script>
 
-        const merchItems = document.querySelector(".merch-items");
+        let merchItems = document.querySelectorAll(".merch-items");
 
-        merchItems.onclick = function() {
+        merchItems.forEach(function(item) {
+            item.addEventListener("click", stockMessage);
+        })
+
+        function stockMessage() {
+            console.log(merchItems);
             alert('This item is currently out of stock.');
         }
 
