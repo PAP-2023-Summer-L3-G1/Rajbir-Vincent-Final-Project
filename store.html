@@ -21,11 +21,92 @@
     </header>
 
     <main>
-        <div class="merch-items">
-            <img src="images/tshirt.png" alt="SimplyFit T-shirt">
-            <h4>T-Shirt</h4>
-            <p class="merch-desc">Comfortable Cotton Tee</p>
-        </div>
+        <h1 id="store-title">Featured Products</h2>
+
+        <section id="merch-section">
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/tshirt.png" alt="SimplyFit T-Shirt" class="merch-images">
+                </div>
+                <h4>T-Shirt</h4>
+                <p class="merch-desc">Gildan Cotton Tee - Royal Blue</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/tanktop.png" alt="SimplyFit Tank Top" class="merch-images">
+                </div>
+                <h4>Tank Top</h4>
+                <p class="merch-desc">Gildan Cotton Tank Top - Royal Blue</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/longsleeve.png" alt="SimplyFit Long Sleeve" class="merch-images">
+                </div>
+                <h4>Long Sleeve</h4>
+                <p class="merch-desc">Baseball Raglan Sleeve Tee - Vintage Royal/Heather White</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/hoodie.png" alt="SimplyFit Hoodie" class="merch-images">
+                </div>
+                <h4>Hoodie</h4>
+                <p class="merch-desc">Vintage Athletic Hoodie - Vintage Royal</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/croppedhoodie.png" alt="SimplyFit Cropped Hoodie" class="merch-images">
+                </div>
+                <h4>Cropped Hoodie</h4>
+                <p class="merch-desc">Cropped Fleece Hoodie - White</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/sweatpants.png" alt="SimplyFit Sweatpants" class="merch-images">
+                </div>
+                <h4>Sweatpants</h4>
+                <p class="merch-desc">Midweight Fleece Sweatpants - Grey Heather</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/cap.png" alt="SimplyFit Cap" class="merch-images">
+                </div>
+                <h4>Cap</h4>
+                <p class="merch-desc">Richardson Garment Baseball Cap - Royal/White</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/waterbottle.png" alt="SimplyFit Water Bottle" class="merch-images">
+                </div>
+                <h4>Water Bottle</h4>
+                <p class="merch-desc">Camelbak Podium Chill Bike Water Bottle - Black/Gray</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+            <div class="merch-items">
+                <div class="merch-image-box">
+                    <img src="images/backpack.png" alt="SimplyFit Backpack" class="merch-images">
+                </div>
+                <h4>Backpack</h4>
+                <p class="merch-desc">Port Authority Value Backpack - Twilight Blue</p>
+                <p class="outofstock-text">OUT OF STOCK</p>
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -37,5 +118,15 @@
         </ul>
         <p>&copy;SimplyFit, Inc. 2023. We love our users!</p>
     </footer>
+
+    <script> /*add javascript for outofstock alert*/
+
+        const merchItems = document.querySelector(".merch-items");
+
+        merchItems.onclick = function() {
+            alert('This item is currently out of stock.');
+        }
+
+    </script>
 </body>
 </html>
