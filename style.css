@@ -427,6 +427,10 @@ section {
     filter: blur(1px) brightness(60%);
 }
 
+#hero-text > p {
+    line-height: 1.1em;
+}
+
 #about-hero-htag {
     font-size: 2.3em;
     color: white;
