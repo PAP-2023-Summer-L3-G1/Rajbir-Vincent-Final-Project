@@ -4,14 +4,14 @@ body {
     line-height: 1.5em;
 }
 
-nav, footer {
+/*nav and footer start here*/
+
+nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     background-color: white;
 }
-
 
 
 .sf-logo {
@@ -27,23 +27,22 @@ nav {
     overflow: hidden;
 }
 
-.menu > .current {
+.nav-menu > .current {
     color: #E37916;
 }
 
-.menu > a:hover, .menu button:hover {
+.nav-menu > a:hover, .nav-menu button:hover {
     color: #E37916;
 }
 
-.menu a {
+.nav-menu a {
     float: left;
     font-size: 16px;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 20px;
     text-decoration: none;
     color: #1680E3;
     font-weight: bold;
-
 }
 
 .dropdown {
@@ -57,7 +56,7 @@ nav {
     border: none;
     outline: none;
     color: #1680E3;
-    padding: 16.5px 30px;
+    padding: 16.5px 20px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
@@ -79,7 +78,7 @@ nav {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
 .dropdown-content a:hover {
@@ -90,19 +89,87 @@ nav {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-.menu > li > .about-feedback, .store-feedback, .support-feedback {
+.nav-menu > li > .about-feedback, .store-feedback, .support-feedback {
     text-decoration: underline;
 }
 
-footer > p {
-    margin-right: 35px;
+footer {
+    font-size: 16px;
 }
 
-#support {
-    margin-right: 15px;
+footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
-/* INDEX html begins here */
+.row {
+  padding: 2em 1em;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+.column {
+    width: 100%;
+    padding: 0 2.5em;
+    min-height: 15em;
+}
+
+.column > h3 {
+    width: 100%;
+    text-align: left;
+    font-size: 1.6em;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.column > img {
+    width: 200px;
+    margin: 50px 0 9.6px 0 ;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+
+ul li a {
+    text-decoration: none;
+    color: #1680E3;
+    font-weight: bold;
+}
+ul li a:hover {
+    color: #E37916;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+.copyright {
+    padding: 0.3em 1em;
+}
+
+.copyright > p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/*nav and footer end here*/
+
+/* Home Page Begins Here */
 #hero {
     background: #333 url('images/index-hero.jpg') no-repeat center center;
     background-size: cover;
@@ -221,9 +288,11 @@ h4 {
     color: #f7bd84;
     font-weight: bolder;
 }
-/* INDEX html ends here ^ */
+
+/* Home Page Ends Here */
 
 /* Exercises begins here*/
+
 .intro {
     background: no-repeat center center;
     background-size: cover;
@@ -325,10 +394,6 @@ section {
     display: inline-block;
 }
 
-.video > iframe {
-    display: inline-block;
-}
-
 .video-titles {
     text-align: center;
     font-weight: bold;
@@ -342,11 +407,15 @@ section {
     display: inline-block;
 }
 
-.video-titles {
+.video > iframe {
+    display: inline-block;
+}
+
+/*.video-titles {
     text-align: center;
     font-weight: bold;
     font-size: 2.25em;
-}
+}*/
 /*Exercises ends here*/
 
 /* About Us starts here */
@@ -459,7 +528,7 @@ select {
 
 /* store.html starts here */
 #merch-section {
-    height: 2000px;
+    height: 1500px;
     width: 100%;
     row-gap: 0px;
     padding: 0;
@@ -471,8 +540,7 @@ select {
 #store-title {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 70px;
+    margin: 70px 0;
 }
 
 .merch-items { /*gap is too big?*/
